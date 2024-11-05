@@ -1,0 +1,189 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #edf2f4;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #edf2f4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #8d99ae;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: #edf2f4;
+    text-decoration: underline;
+}
+
+/* Main Content and Sidebar */
+.main-content {
+    flex: 3;
+    margin-right: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article h2 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    color: #2b2d42;
+    font-weight: bold;
+}
+
+/* Updated image styling */
+.article img.article-image {
+    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.article .tags, .article .rate {
+    font-size: 0.85em;
+    color: #6c757d;
+}
+
+.article .tags {
+    margin-top: 5px;
+}
+
+.article .rate {
+    color: #f77f00;
+    font-weight: bold;
+}
+
+/* Sidebar Section Styling */
+.sidebar .section {
+    margin-bottom: 25px;
+}
+
+.sidebar .section h3 {
+    font-size: 1.3em;
+    color: #2b2d42;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #8d99ae;
+    padding-bottom: 5px;
+}
+
+.sidebar .section a {
+    display: block;
+    color: #2b2d42;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.sidebar .section .date {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.sidebar .section a:hover {
+    color: #f77f00;
+}
+
+/* Tag Cloud Styling */
+.sidebar .tag-cloud p span {
+    background-color: #add8e6
+}
+
+/* Styling for the About Tech Pulse section image */
+.about-image {
+    width: 100%;
+    max-width: 600px; /* Adjusts to fit smaller screens */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
