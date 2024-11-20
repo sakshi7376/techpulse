@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Pulse - Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleReplies(id) {
+            const replies = document.getElementById(id);
+            replies.style.display = replies.style.display === "none" ? "block" : "none";
+        }
+
+        function addNewTopic() {
+            const topicInput = document.getElementById("new-topic");
+            const topicsContainer = document.getElementById("topics");
+            if (topicInput.value.trim() !== "") {
+                const newTopic = document.createElement("div");
+                newTopic.classList.add("forum-topic");
+                newTopic.innerHTML = `
+                    <h3>${topicInput.value}</h3>
+                    <p>Started by <span class="username">NewUser</span></p>
+                `;
+                topicsContainer.appendChild(newTopic);
+                topicInput.value = "";
+            }
+        }
+
+        function countCharacters(inputId, counterId) {
+            const input = document.getElementById(inputId);
+            const counter = document.getElementById(counterId);
+            const charCount = input.value.length;
+
+            counter.innerText = `${charCount}/200 characters`;
+            counter.style.color = charCount > 200 ? "red" : "#555";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <img src="logo.jpg" alt="Tech Pulse Logo" class="logo">
+            <h1>Tech Pulse: Forum</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="forum.html">Forum</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2 class="section-title">Community Forum</h2>
+            <div class="create-topic">
+                <input type="text" id="new-topic" placeholder="Create a new topic..." class="search-bar">
+                <button class="post-btn" onclick="addNewTopic()">Post Topic</button>
+            </div>
+            
+            <div id="topics">
+                <!-- Forum Topic 1 -->
+                <div class="forum-topic">
+                    <img src="image9.jpeg" alt="Future of AI" class="topic-image">
+                    <h3 onclick="toggleReplies('replies1')">Topic: Future of AI (Click to view replies)</h3>
+                    <p>Started by <span class="username">User123</span></p>
+                    <div id="replies1" class="replies" style="display:none;">
+                        <p><span class="username">User123:</span> "AI is revolutionizing everything!"</p>
+                        <p><span class="username">TechFan:</span> "What about ethical concerns?" 
+                            <button class="vote-btn">👍</button> 
+                            <button class="vote-btn">👎</button>
+                        </p>
+                        <textarea id="reply1" oninput="countCharacters('reply1', 'char-count1')" placeholder="Write a reply..." maxlength="200"></textarea>
+                        <p id="char-count1" class="char-count">0/200 characters</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tech Pulse. All rights reserved | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>

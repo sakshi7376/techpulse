@@ -187,3 +187,472 @@ footer a:hover {
     margin: 20px auto; /* Centers the image */
     border-radius: 8px; /* Optional: adds rounded corners */
 }
+/* Specific Styling for Review, Forum, and Tutorial Pages */
+.review, .forum-topic, .tutorial {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review h3, .forum-topic h3, .tutorial h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2b2d42;
+    font-weight: bold;
+}
+
+.review p, .forum-topic p, .tutorial p {
+    line-height: 1.7;
+    color: #555;
+}
+
+.rating {
+    color: #f77f00;
+    font-weight: bold;
+}
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Forum Topic Styles */
+.forum-topic {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forum-topic img.topic-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.forum-topic h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #2b2d42;
+}
+
+.forum-topic p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .header-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+}
+
+header nav a {
+    color: #edf2f4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: #2b2d42;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tutorial Card */
+.tutorial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-header {
+    padding: 15px;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.tutorial-header .icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.tutorial-content {
+    padding: 15px;
+    display: none;
+}
+
+.progress-btn {
+    background-color: #2b2d42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.progress-btn:hover {
+    background-color: #f77f00;
+}
+
+footer {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    padding: 10px 0;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+}
+
+header nav a {
+    color: #edf2f4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: #2b2d42;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Create Topic */
+.create-topic {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.post-btn {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-btn:hover {
+    background-color: #f77f00;
+}
+
+/* Forum Topics */
+.forum-topic {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forum-topic:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.topic-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: #2b2d42;
+}
+
+.replies {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.char-count {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.vote-btn {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.vote-btn:hover {
+    color: #f77f00;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+}
+
+header nav a {
+    color: #edf2f4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: #2b2d42;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Review Card */
+.review-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.review-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.review-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.review-details h3 {
+    font-size: 1.4em;
+    color: #2b2d42;
+    margin-bottom: 10px;
+}
+
+.review-details p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1em;
+    font-weight: bold;
+    color: #f77f00;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #2b2d42;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #f77f00;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2d42;
+    color: #edf2f4;
+    text-align: center;
+    padding
+/* Resizing the topic-image class */
+.topic-image {
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    display: block; 
+}
+

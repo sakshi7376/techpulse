@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Pulse - Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+                section.style.transition = "max-height 0.3s ease";
+            } else {
+                section.style.display = "none";
+            }
+        }
+
+        function updateProgress(progressId, value) {
+            const progressBar = document.getElementById(progressId);
+            progressBar.value = value;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <img src="logo.jpg" alt="Tech Pulse Logo" class="logo">
+            <h1>Tech Pulse: Tutorials</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="forum.html">Forum</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2 class="section-title">Latest Tutorials</h2>
+
+            <!-- Tutorial 1 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header" onclick="toggleSection('tutorial1')">
+                    <h3><span class="icon">🌐</span> How to Build a Website</h3>
+                </div>
+                <div id="tutorial1" class="tutorial-content" style="display: none;">
+                    <p>Learn the basics of HTML, CSS, and JavaScript to create your first website.</p>
+                    <p><a href="https://www.w3schools.com/html/" target="_blank">Learn more on HTML</a></p>
+                    <p>Progress: <progress id="progress1" value="40" max="100"></progress></p>
+                    <button class="progress-btn" onclick="updateProgress('progress1', 60)">Complete Section</button>
+                </div>
+            </div>
+
+            <!-- Tutorial 2 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header" onclick="toggleSection('tutorial2')">
+                    <h3><span class="icon">🐍</span> Getting Started with Python</h3>
+                </div>
+                <div id="tutorial2" class="tutorial-content" style="display: none;">
+                    <p>Python is one of the most versatile programming languages. Start with the basics!</p>
+                    <p><a href="https://www.python.org/" target="_blank">Python Official Website</a></p>
+                    <p>Progress: <progress id="progress2" value="20" max="100"></progress></p>
+                    <button class="progress-btn" onclick="updateProgress('progress2', 50)">Complete Section</button>
+                </div>
+            </div>
+
+            <!-- Tutorial 3 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header" onclick="toggleSection('tutorial3')">
+                    <h3><span class="icon">📐</span> Mastering CSS Flexbox</h3>
+                </div>
+                <div id="tutorial3" class="tutorial-content" style="display: none;">
+                    <p>Learn how to create responsive layouts with CSS Flexbox.</p>
+                    <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox Guide</a></p>
+                    <p>Progress: <progress id="progress3" value="70" max="100"></progress></p>
+                    <button class="progress-btn" onclick="updateProgress('progress3', 90)">Complete Section</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tech Pulse. All rights reserved | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
